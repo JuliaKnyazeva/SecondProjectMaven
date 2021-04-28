@@ -1,11 +1,8 @@
 package calculator;
 
-public class Calc extends Device{
+public class Calc {
 
 
-    static {
-        System.out.println("Calcularot status: OK");
-    }
     static int digits; // для наследования
     private static final int SCREEN_DIGITS = 10;// нельзя наследовать и изменять методы
 
@@ -14,9 +11,11 @@ public class Calc extends Device{
     }
 
 
-
-    @Override //для абстракт обязательно
     public int sum(int a, int b) {
         return a + b;
+    }
+
+    public int divide(int a, int b) {
+        return a / b;
     }
 }
